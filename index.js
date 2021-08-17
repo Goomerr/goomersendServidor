@@ -10,10 +10,10 @@ conectarDB();
 console.log('Comenzando con GoomerSend');
 
 //Habilitar cors
-// const opcionesCors = {
-//     origin: process.env.FRONTEND_URL
-// }
-app.use(cors());
+const opcionesCors = {
+    origin: process.env.FRONTEND_URL
+}
+app.use(cors(opcionesCors));
 
 //Puerto de la app
 const port = process.env.PORT || 4000;
